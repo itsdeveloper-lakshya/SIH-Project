@@ -1,0 +1,259 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000; /* Font color */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background for the entire page */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Align buttons properly */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #000000; /* Nav buttons text color */
+    font-weight: bold; /* Make the brand name bold */
+}
+
+.nav-link {
+    margin-right: 1rem;
+    color: #000000; /* Text color */
+}
+
+.nav-link:hover {
+    color: #c7c4d2; /* Color on hover */
+}
+
+/* Aligning navigation buttons according to the section order */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background: url('background.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire section */
+    padding: 3rem 1rem; /* Space between section */
+    text-align: center;
+    color: #ffffff; /* White text color */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff; /* White color for header text */
+    font-weight: bold; /* Make 'INDIAN SIGN LANGUAGE DETECTOR' bold */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn-explore,
+button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    border: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* 3D effect */
+    outline: none;
+}
+
+.btn-explore {
+    background: url('path/to/your/button-background-image.jpg') no-repeat center center; /* Background image for the button */
+    background-size: cover; /* Cover the button */
+}
+
+.btn-explore:hover,
+button:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.15); /* Enhanced 3D effect on hover */
+}
+
+.btn-explore:active,
+button:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle inset shadow for pressed effect */
+}
+
+/* Content Box */
+.content-box {
+    background-color: #fefae0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-size: 1.2em;
+    color: #d3dde1;
+}
+
+/* Select box */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #dbe3e7;
+    border-radius: 8px;
+    background-color: #def1ef;
+    color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #a0a8ab;
+}
+
+select:focus {
+    border-color: #ffffff;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Feedback form */
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Features Section */
+#features {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.feature-box {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.feature-box h2 {
+    font-size: 1.5rem;
+    color: #ebedf0;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+/* Our Team Section */
+#team {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#team .team-member {
+    margin: 1rem;
+}
+
+#team h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+#team p {
+    font-size: 1.2rem;
+    color: #b39393;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .content-box {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    select, button {
+        font-size: 1em;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}

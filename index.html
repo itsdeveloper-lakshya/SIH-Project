@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Sign Language Detector</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Expanded navigation buttons with spacing -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" data-content-key="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features" data-content-key="features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourteam" data-content-key="ourteam">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-content-key="about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-content-key="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-4" data-content-key="hero-title">Indian Sign Language Detector</h1>
+      <p class="lead" data-content-key="hero-subtitle">Breaking barriers with seamless sign language translation.</p>
+      <div class="explore-btn-container">
+        <a href="capture.html" class="btn btn-explore" data-content-key="explore-btn">Explore</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="section-content">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="features-title">Features</h2>
+      <p data-content-key="features-text">Discover the key features of our sign language translation platform, designed to make communication accessible for everyone.</p>
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section id="ourteam" class="section-content bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="ourteam-title">Our Team</h2>
+      <p data-content-key="ourteam-text">
+        Meet the dedicated team behind the Indian Sign Language Detector, committed to making communication easier for everyone.
+      </p>
+      <ul>
+        <li>Lakshya Gupta</li>
+        <li>Ashutosh Singh</li>
+        <li>Mohammad Saif Siddiqui</li>
+        <li>Kriti Verma</li>
+        <li>Dev Vashisth</li>
+        <li>Abhimann Pande</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Language Selector Section -->
+  <section id="languages" class="section-content">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="language-selector-title">Choose Your Language</h2>
+      <div class="text-center language-selector">
+        <select class="form-select" id="language-select" aria-label="Select Language">
+          <option value="en" selected>English</option>
+          <option value="hi">Hindi</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="section-content feedback-section">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="feedback-title">We Value Your Feedback</h2>
+      <div class="feedback-form">
+        <form>
+          <div class="mb-3">
+            <label for="feedback-name" class="form-label" data-content-key="feedback-name-label">Name</label>
+            <input type="text" class="form-control" id="feedback-name" placeholder="Your Name" data-content-key="feedback-name-placeholder">
+          </div>
+          <div class="mb-3">
+            <label for="feedback-email" class="form-label" data-content-key="feedback-email-label">Email address</label>
+            <input type="email" class="form-control" id="feedback-email" placeholder="Your Email" data-content-key="feedback-email-placeholder">
+          </div>
+          <div class="mb-3">
+            <label for="feedback-message" class="form-label" data-content-key="feedback-message-label">Message</label>
+            <textarea class="form-control" id="feedback-message" rows="4" placeholder="Your Feedback" data-content-key="feedback-message-placeholder"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-content-key="feedback-submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section-content bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="about-title">About Us</h2>
+      <p data-content-key="about-text">
+        Welcome to our initiative where technology meets inclusivity! We are a passionate team of innovators working towards bridging the communication gap between the hearing and speech-impaired communities and the wider world. Our project focuses on converting Indian Sign Language (ISL) into Indian languages, making communication seamless, empowering individuals, and fostering a more inclusive society.
+      </p>
+      <p data-content-key="about-text-2">
+        Our journey began with a simple yet powerful idea: to harness the power of AI and machine learning to bring voices to the voiceless. Through cutting-edge technology, we translate Indian Sign Language into text and speech, enabling individuals to express themselves in their native tongues with dignity and clarity.
+      </p>
+      <p data-content-key="about-text-3">
+        Driven by compassion and a desire to make a difference, we believe that language should never be a barrier to connection. Our mission is to empower individuals and communities, opening doors to opportunities and deeper understanding. With innovation at the heart of everything we do, we strive to make a lasting impact on lives across India.
+      </p>
+      <p data-content-key="about-text-4">
+        Join us on our journey to create a world where everyone can be heard, and communication is truly universal.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-content bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-content-key="contact-title">Contact Us</h2>
+      <p class="text-center" data-content-key="contact-text">If you have any questions or need assistance, feel free to reach out!</p>
+      <p class="text-center" data-content-key="contact-text">Gmail: p0851216@gmail.com</p>
+      <p class="text-center" data-content-key="contact-text">Mobile No.: 8318217092</p>
+      <!-- Add contact form or contact details here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p data-content-key="footer-text">&copy; 2024 Indian Sign Language Detector. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Language Translation Script -->
+  <script>
+    const translations = {
+      'en': {
+        'hero-title': 'Welcome to the Indian Sign Language Detector',
+        'hero-subtitle': 'Breaking barriers with seamless sign language translation.',
+        'features-title': 'Features',
+        'features-text': 'Discover the key features of our sign language translation platform, designed to make communication accessible for everyone.',
+        'ourteam-title': 'Our Team',
+        'ourteam-text': 'Meet the dedicated team behind the Indian Sign Language Detector, committed to making communication easier for everyone.',
+        'language-selector-title': 'Choose Your Language',
+        'about-title': 'About Us',
+        'about-text': 'Welcome to our initiative where technology meets inclusivity! We are a passionate team of innovators working towards bridging the communication gap between the hearing and speech-impaired communities and the wider world. Our project focuses on converting Indian Sign Language (ISL) into Indian languages, making communication seamless, empowering individuals, and fostering a more inclusive society.',
+        'about-text-2': 'Our journey began with a simple yet powerful idea: to harness the power of AI and machine learning to bring voices to the voiceless. Through cutting-edge technology, we translate Indian Sign Language into text and speech, enabling individuals to express themselves in their native tongues with dignity and clarity.',
+        'about-text-3': 'Driven by compassion and a desire to make a difference, we believe that language should never be a barrier to connection. Our mission is to empower individuals and communities, opening doors to opportunities and deeper understanding. With innovation at the heart of everything we do, we strive to make a lasting impact on lives across India.',
+        'about-text-4': 'Join us on our journey to create a world where everyone can be heard, and communication is truly universal.',
+        'contact-title': 'Contact Us',
+        'contact-text': 'If you have any questions or need assistance, feel free to reach out!',
+        'feedback-title': 'We Value Your Feedback',
+        'feedback-name-label': 'Name',
+        'feedback-name-placeholder': 'Your Name',
+        'feedback-email-label': 'Email address',
+        'feedback-email-placeholder': 'Your Email',
+        'feedback-message-label': 'Message',
+        'feedback-message-placeholder': 'Your Feedback',
+        'feedback-submit': 'Submit Feedback',
+        'footer-text': '&copy; 2024 Indian Sign Language Detector. All rights reserved.'
+      },
+      'hi': {
+        'hero-title': 'भारतीय सांकेतिक भाषा डिटेक्टर में आपका स्वागत है',
+        'hero-subtitle': 'सही साइन लैंग्वेज अनुवाद के साथ बाधाओं को तोड़ना।',
+        'features-title': 'विशेषताएँ',
+        'features-text': 'हमारे साइन लैंग्वेज अनुवाद प्लेटफ़ॉर्म की प्रमुख विशेषताओं का पता लगाएँ, जिसे सभी के लिए संचार को सुलभ बनाने के लिए डिज़ाइन किया गया है।',
+        'ourteam-title': 'हमारी टीम',
+        'ourteam-text': 'भारतीय सांकेतिक भाषा डिटेक्टर के पीछे की समर्पित टीम से मिलें, जो सभी के लिए संचार को आसान बनाने के लिए प्रतिबद्ध है।',
+        'language-selector-title': 'अपनी भाषा चुनें',
+        'about-title': 'हमारे बारे में',
+        'about-text': 'हमारी पहल में आपका स्वागत है जहां प्रौद्योगिकी समावेशिता से मिलती है! हम नवप्रवर्तकों की एक भावुक टीम हैं जो सुनने और बोलने में असमर्थ समुदायों और व्यापक दुनिया के बीच संचार की खाई को पाटने की दिशा में काम कर रहे हैं। हमारा प्रोजेक्ट भारतीय सांकेतिक भाषा (ISL) को भारतीय भाषाओं में परिवर्तित करने पर केंद्रित है, जिससे संचार सहज हो जाता है, व्यक्तियों को सशक्त बनाता है, और एक अधिक समावेशी समाज को बढ़ावा देता है।',
+        'about-text-2': 'हमारी यात्रा एक साधारण लेकिन शक्तिशाली विचार से शुरू हुई: AI और मशीन लर्निंग की शक्ति का उपयोग करके आवाजों को बेआवाज़ों तक लाना। अत्याधुनिक प्रौद्योगिकी के माध्यम से, हम भारतीय सांकेतिक भाषा का अनुवाद पाठ और भाषण में करते हैं, जिससे व्यक्तियों को अपने मूल भाषाओं में सम्मान और स्पष्टता के साथ व्यक्त करने में सक्षम बनाते हैं।',
+        'about-text-3': 'सहानुभूति और फर्क लाने की इच्छा से प्रेरित, हम मानते हैं कि भाषा कभी भी संबंध का एक बाधा नहीं होनी चाहिए। हमारा मिशन व्यक्तियों और समुदायों को सशक्त बनाना है, अवसरों के दरवाजे खोलना और गहरी समझ को बढ़ावा देना है। हमारे काम के दिल में नवाचार के साथ, हम भारत भर में जीवन पर एक स्थायी प्रभाव डालने की कोशिश करते हैं।',
+        'about-text-4': 'हमारी यात्रा में हमारे साथ शामिल हों जहां हर कोई सुना जा सके, और संचार वास्तव में सार्वभौमिक हो।',
+        'contact-title': 'संपर्क करें',
+        'contact-text': 'यदि आपके कोई प्रश्न हैं या सहायता की आवश्यकता है, तो बेझिझक संपर्क करें!',
+        'feedback-title': 'हम आपकी प्रतिक्रिया की सराहना करते हैं',
+        'feedback-name-label': 'नाम',
+        'feedback-name-placeholder': 'आपका नाम',
+        'feedback-email-label': 'ईमेल पता',
+        'feedback-email-placeholder': 'आपका ईमेल',
+        'feedback-message-label': 'संदेश',
+        'feedback-message-placeholder': 'आपकी प्रतिक्रिया',
+        'feedback-submit': 'प्रतिक्रिया सबमिट करें',
+        'footer-text': '&copy; 2024 भारतीय सांकेतिक भाषा डिटेक्टर. सर्वाधिकार सुरक्षित.'
+      }
+    };
+
+    document.getElementById('language-select').addEventListener('change', (event) => {
+      const selectedLanguage = event.target.value;
+      document.querySelectorAll('[data-content-key]').forEach(el => {
+        const key = el.getAttribute('data-content-key');
+        el.textContent = translations[selectedLanguage][key] || key;
+      });
+    });
+  </script>
+</body>
+</html>
